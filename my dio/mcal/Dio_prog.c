@@ -11,6 +11,7 @@
 #include "Dio_Private.h"
 #include "Dio_Config.h"
 
+/**************** itialization *************************/
 void DIO_voidInitialization(void)
 {
 	DDRA = DIO_PORTA_DIRECTIONS;
@@ -19,6 +20,7 @@ void DIO_voidInitialization(void)
 	DDRD = DIO_PORTD_DIRECTIONS;
 }
 
+/**************** Set Pin Direction *************************/
 void DIO_voidSetPinDirection(u8 PortID, u8 PinID, u8 Direction)
 {
 	if(PortID < 4 && PinID < 8)
