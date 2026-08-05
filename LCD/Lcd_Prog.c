@@ -11,15 +11,6 @@
 #include "Lcd_Private.h"
 #include "Lcd_Int.h"
 
-#include <util/delay.h>
-#include "../../std_lib/Std_Types.h"
-#include "../../std_lib/Bit_Math.h"
-#include "../../mcal/DIO/Dio_Int.h"
-#include "Lcd_Config.h"
-#include "Lcd_Private.h"
-#include "Lcd_Int.h"
-
-
 static void LCD_voidPutonBus(u8 u8Char)
 {
     DIO_voidSetpinValue(LCD_D0, GET_BIT(u8Char, 0));
